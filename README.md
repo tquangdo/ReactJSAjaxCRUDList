@@ -11,6 +11,7 @@
 ## heroku
 ### install
 - `npm i -g heroku`
+### dashboard on website
 ![heroku](heroku.png)
 ***********
 ### setting
@@ -78,6 +79,18 @@ Host heroku.work (chú ý phải là "heroku.work")
   HostName heroku.com (chú ý phải là "heroku.com")
   IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
   IdentitiesOnly yes
+```
+***********
+```bash
+(05/15/21)NC00011462@dotq ~/.ssh% cat config 
+#~~~~~~~~~~~~~~~~~Heroku
+Host heroku.work
+  HostName heroku.com
+  IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
+  IdentitiesOnly yes
+
+#~~~~~~~~~~~~~~~~~Signing dev
+Host ...
 ```
 6. edit file "config" of project
 ```shell
