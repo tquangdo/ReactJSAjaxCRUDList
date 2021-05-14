@@ -1,6 +1,7 @@
 # react-ajax-demo-crud-list 🚀
 
 [![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/react-ajax-demo-crud-list/issues/new)
+***********
 ![demo](demo.png)
 
 ## deploy local
@@ -9,7 +10,7 @@
 
 ## heroku
 ![heroku](heroku.png)
-Dùng GIT "trangia@gmail.com" connect acc Heroku "tquangdo1103" (acc thứ 2 ngoài acc 1 "trangia61")
+Dùng GIT "trangia@gmail.com" connect acc Heroku `tquangdo1103` (acc thứ 2 ngoài acc 1 `trangia61`)
 1. `~/.ssh$ ssh-keygen -t rsa`
 - đặt tên để tạo ra 2 file "id_rsa_heroku_tquangdo1103" & "id_rsa_heroku_tquangdo1103.pub"
 2. `heroku keys:ad`
@@ -26,7 +27,7 @@ Host heroku.work (chú ý phải là "heroku.work")
   IdentitiesOnly yes
 ```
 6. edit file "~/.git/config"
-```bash
+```shell
 [remote "heroku"]
    	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
 ```
