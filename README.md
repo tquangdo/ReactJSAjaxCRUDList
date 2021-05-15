@@ -120,3 +120,7 @@ Host ...
 ```
 #### commands
 https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
+* check buildpacks
+- `heroku buildpacks -a react-ajax-crud-list-dotq`
+- -> `heroku/nodejs`
+- ![buildpacks](buildpacks.png)
