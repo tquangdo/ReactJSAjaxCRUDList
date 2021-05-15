@@ -16,6 +16,7 @@
 ![heroku](heroku.png)
 ***********
 ### setting
+#### create 2nd heroku's acc
 Dùng GIT "trangia@gmail.com" connect acc Heroku `tquangdo1103` (acc thứ 2 ngoài acc 1 `trangia61`)
 1. đặt tên "id_rsa_heroku_tquangdo1103" để tạo ra 2 file "id_rsa_heroku_tquangdo1103" & "id_rsa_heroku_tquangdo1103.pub"
 ```bash
@@ -117,3 +118,5 @@ Host ...
 	remote = origin
 	merge = refs/heads/master
 ```
+#### commands
+https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
