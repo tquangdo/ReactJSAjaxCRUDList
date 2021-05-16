@@ -84,7 +84,7 @@ Host heroku.work (chú ý phải là "heroku.work")
 ```
 * 5.2/
 ```bash
-(05/15/21)NC00011462@dotq ~/.ssh% cat config 
+(05/15/21)NC00011462@dotq ~/.ssh% less config 
 #~~~~~~~~~~~~~~~~~Heroku
 Host heroku.work
   HostName heroku.com
@@ -103,7 +103,7 @@ Host ...
 ```
 * 6.2/
 ```bash
-(05/15/21)NC00011462@dotq ~/Documents/GitHub/react-ajax-demo-crud-list% cat .git/config
+(05/15/21)NC00011462@dotq ~/Documents/GitHub/react-ajax-demo-crud-list% less .git/config
 [core]
 	repositoryformatversion = 0
 	filemode = true
