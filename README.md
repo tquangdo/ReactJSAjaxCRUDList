@@ -72,17 +72,17 @@ ssh-rsa AAAAB3NzaC...gjMiUGO0yl DoTQ@DESKTOP-CCFC4M2
 ```
 4. https://github.com/settings/keys
 - click "New SSH key" > add "id_rsa_heroku_tquangdo1103.pub"
-***********
 ![ssh_key](ssh_key.png)
 ***********
 5. edit file "~.ssh/config"
+* 5.1/
 ```bash
 Host heroku.work (chú ý phải là "heroku.work")
   HostName heroku.com (chú ý phải là "heroku.com")
   IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
   IdentitiesOnly yes
 ```
-***********
+* 5.2/
 ```bash
 (05/15/21)NC00011462@dotq ~/.ssh% cat config 
 #~~~~~~~~~~~~~~~~~Heroku
@@ -94,12 +94,14 @@ Host heroku.work
 #~~~~~~~~~~~~~~~~~Signing dev
 Host ...
 ```
+***********
 6. edit file "config" of project
+* 6.1/
 ```shell
 [remote "heroku"]
    	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
 ```
-***********
+* 6.2/
 ```bash
 (05/15/21)NC00011462@dotq ~/Documents/GitHub/react-ajax-demo-crud-list% cat .git/config
 [core]
@@ -118,6 +120,7 @@ Host ...
 	remote = origin
 	merge = refs/heads/master
 ```
+***********
 #### commands
 https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
 * check buildpacks
