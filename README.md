@@ -17,7 +17,7 @@
 ***********
 ### setting
 #### create 2nd heroku's acc (JUST FOR WIN OS!!!)
-Dùng GIT "trangia@gmail.com" connect acc Heroku `tquangdo1103` (acc thứ 2 ngoài acc 1 `trangia61`)
+Dùng GIT "trangia61@" connect acc Heroku `tquangdo1103` (acc thứ 2 ngoài acc 1 `trangia61`)
 1. đặt tên "id_rsa_heroku_tquangdo1103" để tạo ra 2 file "id_rsa_heroku_tquangdo1103" & "id_rsa_heroku_tquangdo1103.pub"
 ```bash
 (05/15/21)NC00011462@dotq ~/.ssh% ssh-keygen -t rsa         
