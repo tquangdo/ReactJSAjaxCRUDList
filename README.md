@@ -16,7 +16,7 @@
 ![heroku](heroku.png)
 ***********
 ### setting
-#### create 2nd heroku's acc
+#### create 2nd heroku's acc (JUST FOR WIN OS!!!)
 Dùng GIT "trangia@gmail.com" connect acc Heroku `tquangdo1103` (acc thứ 2 ngoài acc 1 `trangia61`)
 1. đặt tên "id_rsa_heroku_tquangdo1103" để tạo ra 2 file "id_rsa_heroku_tquangdo1103" & "id_rsa_heroku_tquangdo1103.pub"
 ```bash
@@ -75,19 +75,11 @@ ssh-rsa AAAAB3NzaC...gjMiUGO0yl DoTQ@DESKTOP-CCFC4M2
 ![ssh_key](ssh_key.png)
 ***********
 5. edit file "~.ssh/config"
-* 5.1/
-```bash
-Host heroku.work (chú ý phải là "heroku.work")
-  HostName heroku.com (chú ý phải là "heroku.com")
-  IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
-  IdentitiesOnly yes
-```
-* 5.2/
 ```bash
 (05/15/21)NC00011462@dotq ~/.ssh% less config 
 #~~~~~~~~~~~~~~~~~Heroku
-Host heroku.work
-  HostName heroku.com
+Host heroku.work (chú ý phải là "heroku.work")
+  HostName heroku.com (chú ý phải là "heroku.com")
   IdentityFile ~/.ssh/id_rsa_heroku_tquangdo1103
   IdentitiesOnly yes
 
@@ -96,12 +88,6 @@ Host ...
 ```
 ***********
 6. edit file "config" of project
-* 6.1/
-```shell
-[remote "heroku"]
-   	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
-```
-* 6.2/
 ```bash
 (05/15/21)NC00011462@dotq ~/Documents/GitHub/react-ajax-demo-crud-list% less .git/config
 [core]
@@ -115,7 +101,7 @@ Host ...
 	url = https://github.com/tquangdo/react-ajax-demo-crud-list.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [remote "heroku"]
-   	url = git@heroku.work:react-ajax-crud-list-dotq.git
+   	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
