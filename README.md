@@ -92,14 +92,9 @@ Host ...
 (05/15/21)NC00011462@dotq ~/Documents/GitHub/react-ajax-demo-crud-list% less .git/config
 [core]
 	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-	ignorecase = true
-	precomposeunicode = true
+	...
 [remote "origin"]
-	url = https://github.com/tquangdo/react-ajax-demo-crud-list.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
+	...
 [remote "heroku"]
    	url = git@heroku.work:react-ajax-crud-list-dotq.git (chú ý phải là "heroku.work")
 [branch "master"]
@@ -109,7 +104,6 @@ Host ...
 ***********
 #### commands
 https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
-* check buildpacks
-- `heroku buildpacks -a react-ajax-crud-list-dotq`
+- check buildpacks: `heroku buildpacks -a react-ajax-crud-list-dotq`
 - -> `heroku/nodejs`
-- ![buildpacks](buildpacks.png)
+![buildpacks](buildpacks.png)
