@@ -113,13 +113,13 @@ https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
 ### install
 1. `npm i @knuckleswtf/scribe-express`
 2. `npx scribe init`
-- in questions, choose same port with nidex.js: `3001` -> auto create `.scribe.config.js`
+- in auto generated questions, choose same port with index.js: `3001` -> auto create `.scribe.config.js`
 
 ### setting
 1. edit in `.scribe.config.js`:
 ```js
 openapi: {
-        enabled: false->true,
+        enabled: true, // false->true
 ...
 ```
 2. edit in `index.js`:
