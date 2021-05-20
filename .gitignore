@@ -8,3 +8,5 @@
 # production
 /build
 package-lock.json
+public/docs/*
+.DS_Store

@@ -107,3 +107,49 @@ https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
 - check buildpacks: `heroku buildpacks -a react-ajax-crud-list-dotq`
 - -> `heroku/nodejs`
 ![buildpacks](screenshot/buildpacks.png)
+
+## scribe doc generator (https://scribe-js.readthedocs.io/)
+
+### install
+1. `npm i @knuckleswtf/scribe-express`
+2. `npx scribe init`
+- in questions, choose same port with nidex.js: `3001` -> auto create `.scribe.config.js`
+
+### setting
+1. edit in `.scribe.config.js`:
+```js
+openapi: {
+        enabled: false->true,
+...
+```
+2. edit in `index.js`:
+```js
+require('@knuckleswtf/scribe-express')(app)
+...
+module.exports = app
+```
+
+### generate
+- `npx scribe generate -a index.js`
+>need stop all processes running `3001`
+- -> auto create API accroding to `index.js`:
+```js
+app.get("/", function (req, res) {...}
+app.post("/getMangServer", function (req, res) {...}
+app.post("/addDivThemServer", parser, function (req, res) {...}
+app.post("/xoaServer", parser, function (req, res) {...}
+app.post("/luuServer", parser, function (req, res) {...}
+```
+- `nodemon index`
+
+### result
+1. access browser "http://localhost:3001/docs"
+![generator](screenshot/generator.png)
+
+2. click `View Postman Collection`
+![postman](screenshot/postman.png)
+
+3. click `View OpenAPI Spec`
+![openapi](screenshot/openapi.png)
+
+
