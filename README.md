@@ -2,7 +2,7 @@
 
 [![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/react-ajax-demo-crud-list/issues/new)
 ***********
-![demo](demo.png)
+![demo](screenshot/demo.png)
 
 ## deploy local
 1. `node index.js`
@@ -13,7 +13,7 @@
 ### install
 - `npm i -g heroku`
 ### dashboard on website
-![heroku](heroku.png)
+![heroku](screenshot/heroku.png)
 ***********
 ### setting
 #### create 2nd heroku's acc (JUST FOR WIN OS!!!)
@@ -72,7 +72,7 @@ ssh-rsa AAAAB3NzaC...gjMiUGO0yl DoTQ@DESKTOP-CCFC4M2
 ```
 4. https://github.com/settings/keys
 - click "New SSH key" > add "id_rsa_heroku_tquangdo1103.pub"
-![ssh_key](ssh_key.png)
+![ssh_key](screenshot/ssh_key.png)
 ***********
 5. edit file "~.ssh/config"
 ```bash
@@ -106,4 +106,4 @@ Host ...
 https://github.com/tquangdo/node-zoom-clone-app/blob/master/memo.txt
 - check buildpacks: `heroku buildpacks -a react-ajax-crud-list-dotq`
 - -> `heroku/nodejs`
-![buildpacks](buildpacks.png)
+![buildpacks](screenshot/buildpacks.png)
